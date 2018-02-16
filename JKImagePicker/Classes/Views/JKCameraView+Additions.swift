@@ -3,7 +3,7 @@
 //   
 //
 //  Created by James KUMAKO on 2/5/18.
-//  Copyright © 2018 Fahid Attique. All rights reserved.
+//  Copyright © 2018 James KUMAKO. All rights reserved.
 //
 
 
@@ -30,8 +30,6 @@ extension JKCameraView {
       }
     }
   }
-  
-  
   
   func takePhoto(_ stillImageOutput: AVCaptureStillImageOutput, videoOrientation: AVCaptureVideoOrientation, cameraPosition: AVCaptureDevicePosition, cropSize: CGSize, completion: @escaping CameraShotCompletion) {
     
@@ -107,8 +105,8 @@ extension JKCameraView {
   
   
   func saveImage(image: UIImage) {
-    let spinner = showSpinner()
-    preview.isHidden = true
+    //let spinner = showSpinner()
+    //preview.isHidden = true
     
     
     

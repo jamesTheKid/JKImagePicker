@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 Swift 3.2
-iOS 9
+  iOS 9
 
 ## Installation
 
@@ -22,9 +22,47 @@ it, simply add the following line to your Podfile:
 pod 'JKImagePicker'
 ```
 
+## Features
+
+* Load all photos from Photo library
+* Select which library photos to load
+* Zoom-in and zoom-out with Gestures
+* Zoom-in and zoom-out button like instagram
+* Grid view while editing/touch begins
+* Crop Image while maintaining aspect ratio of image
+* Crop Image With original image resolution
+* Take square-sized image with camera
+
+## JKImagePicker Usage
+
+Import JKImagePicker ```import JKImagePicker``` then use the following :
+
+```Swift
+let imagePicker = JKImagePickerViewController()
+imagePicker = self
+self.present(self.imagePicker!, animated: true, completion: nil)
+```
+
+#### Delegate methods
+
+```Swift
+// Return the image which is selected from library  or  taken with the camera.
+func didFinishPickingPhoto(image: UIImage) {
+
+  print("image picked")
+  
+}
+
+// Called after click on cancel button.
+func didCancelPickingPhoto() {
+
+  print("Called just after FusumaViewController is dismissed.")
+}
+```
+
 ## Author
 
-**Jimmy Kumako**  , kumako.jimmy@gmail.com
+**Jimmy Kumako**  ,  https://github.com/jamesTheKid
 
 ## License
 

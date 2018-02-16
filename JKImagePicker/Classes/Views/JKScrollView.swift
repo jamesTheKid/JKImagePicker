@@ -24,20 +24,8 @@ class JKScrollView: UIScrollView{
         }
     }
     let bundle = Bundle(for: JKImagePickerViewController.self)
-  
-    //let nib = UINib(nibName: "JKGridView", bundle: Bundle(for: JKImagePickerViewController.self)).first as! UIView
-  
-  
-    //var gridView:UIView = Bundle.main.loadNibNamed("JKGridView", owner: nil, options: nil)?.first as! UIView
-  
     var gridView:UIView = Bundle(for: JKImagePickerViewController.self).loadNibNamed("JKGridView", owner: nil, options: nil)?.first as! UIView
   
-  
-  
-  
-    //var gridView:UIView = UINib(nibName: "JKGridView", bundle: bundle)
-    
-
     // MARK : Class Functions
     
     override func awakeFromNib() {

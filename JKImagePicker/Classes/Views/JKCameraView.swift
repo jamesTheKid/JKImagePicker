@@ -3,7 +3,7 @@
 //
 //
 //  Created by James KUMAKO on 2/5/18.
-//  Copyright © 2018 Fahid Attique. All rights reserved.
+//  Copyright © 2018 James KUMAKO. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import AVFoundation
 
 
 public protocol JKCameraViewDelegate {
-  func didShootPhoto(image: UIImage, metaData: [String: Any])
+  func didShootPhoto(image: UIImage)
 }
 
 class JKCameraView: UIView {
@@ -183,16 +183,10 @@ class JKCameraView: UIView {
         
         DispatchQueue.main.async(execute: { () -> Void in
           
-          delegate.didShootPhoto(image: croppedUIImage, metaData: [String : Any]( ) )
+          delegate.didShootPhoto(image: croppedUIImage)
           
           self.saveImageToCameraRoll(image: croppedUIImage)
           
-          /*
-          self.session       = nil
-          self.preview    = nil
-          self.device        = nil
-          self.imageOutput   = nil
-          */
           
         })
       }

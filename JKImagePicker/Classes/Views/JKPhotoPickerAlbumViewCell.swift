@@ -3,7 +3,7 @@
 //
 //
 //  Created by James KUMAKO on 2/6/18.
-//  Copyright © 2018 Fahid Attique. All rights reserved.
+//  Copyright © 2018 James KUMAKO. All rights reserved.
 //
 
 import UIKit

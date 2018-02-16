@@ -11,13 +11,8 @@ import JKImagePicker
 
 class ViewController: UIViewController,JKImagePickerViewControllerDelegate {
   
-  func didFinishPickingPhoto(image: UIImage, metaData: [String : Any]) {
-    
-  }
   
-  func didCancelPickingPhoto() {
-    
-  }
+  @IBOutlet var  imageSelected: UIImageView?
   
   
   var picker: JKImagePickerViewController?
@@ -39,10 +34,20 @@ class ViewController: UIViewController,JKImagePickerViewControllerDelegate {
     
   }
   
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+  func didFinishPickingPhoto(image: UIImage) {
+    imageSelected?.image = image
+  }
+  
+  func didCancelPickingPhoto() {
+    
+  }
+  
+
+  override func didReceiveMemoryWarning() {
+      super.didReceiveMemoryWarning()
+      // Dispose of any resources that can be recreated.
+  }
 
 }
 

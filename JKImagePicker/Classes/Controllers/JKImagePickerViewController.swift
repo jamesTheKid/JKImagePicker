@@ -9,7 +9,7 @@ import UIKit
 import Photos
 
 public protocol JKImagePickerViewControllerDelegate {
-  func didFinishPickingPhoto(image: UIImage, metaData: [String: Any])
+  func didFinishPickingPhoto(image: UIImage)
   func didCancelPickingPhoto()
 }
 public class JKImagePickerViewController: UIViewController {
@@ -229,7 +229,6 @@ public class JKImagePickerViewController: UIViewController {
       if let view = UINib(nibName: "JKImagePickerViewController", bundle: Bundle(for: self.classForCoder)).instantiate(withOwner: self, options: nil).first as? UIView {
         view.frame = UIScreen.main.bounds
         self.view = view
-        //print("SMPhotoPickerViewController", self.view.frame)
       }
     }
   
@@ -242,7 +241,8 @@ public class JKImagePickerViewController: UIViewController {
         self.showSpinner()
       }
       else{
-        self.delegate?.didFinishPickingPhoto(image: self.libraryView.getCroppedImage(), metaData: [String : Any]())
+        self.delegate?.didFinishPickingPhoto(image: self.libraryView.getCroppedImage())
+        self.dismiss(animated: true, completion: nil)
       }
       
     }
@@ -264,7 +264,7 @@ public class JKImagePickerViewController: UIViewController {
       self.nextButton.isHidden = false
       selectedAlbumButton.setTitle(albumName, for: .normal)
       globalScrollView.setContentOffset(CGPoint(x:0, y:0), animated: true)
-      librayButton.setTitleColor(UIColor.black, for: .normal)
+      librayButton.setTitleColor(UIColor.white, for: .normal)
       cameraButton.setTitleColor(UIColor.lightGray, for: .normal)
     }
   
@@ -273,7 +273,7 @@ public class JKImagePickerViewController: UIViewController {
       self.nextButton.isHidden = true
       selectedAlbumButton.setTitle("Photo", for: .normal)
       globalScrollView.setContentOffset(CGPoint(x:self.globalScrollView.frame.width, y:0), animated: true)
-      cameraButton.setTitleColor(UIColor.black, for: .normal)
+      cameraButton.setTitleColor(UIColor.white, for: .normal)
       librayButton.setTitleColor(UIColor.lightGray, for: .normal)
     }
   
@@ -324,7 +324,7 @@ public class JKImagePickerViewController: UIViewController {
 
     func showSpinner()  {
       
-      spinner.activityIndicatorViewStyle = .gray
+      spinner.activityIndicatorViewStyle = .white
       spinner.center = CGPoint(x: 46/2,y: 44/2)
       
       spinner.startAnimating()
@@ -349,7 +349,8 @@ extension JKImagePickerViewController:  JKCameraViewDelegate, JKPhotoPickerAlbum
     self.removeSpinner()
     if nextClicked == true {
       didSetupConstraint = false
-      self.delegate?.didFinishPickingPhoto(image: self.libraryView.getCroppedImage(), metaData: [String : Any]())
+      self.delegate?.didFinishPickingPhoto(image: self.libraryView.getCroppedImage())
+      self.dismiss(animated: true, completion: nil)
     }
     
   }
@@ -359,13 +360,13 @@ extension JKImagePickerViewController:  JKCameraViewDelegate, JKPhotoPickerAlbum
   }
   
   
-  public func didShootPhoto(image: UIImage, metaData: [String : Any]) {
+  public func didShootPhoto(image: UIImage) {
     
     self.removeSpinner()
     self.libraryView.cancelDownloadInProgess()
     nextClicked = false
     didSetupConstraint = false
-    self.delegate?.didFinishPickingPhoto(image: image, metaData: metaData)
+    self.delegate?.didFinishPickingPhoto(image: image)
   }
   
   
