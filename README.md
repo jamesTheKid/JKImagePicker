@@ -56,7 +56,7 @@ func didFinishPickingPhoto(image: UIImage) {
 // Called after click on cancel button.
 func didCancelPickingPhoto() {
 
-  print("Called just after FusumaViewController is dismissed.")
+  print("Cancel button clicked")
 }
 ```
 
