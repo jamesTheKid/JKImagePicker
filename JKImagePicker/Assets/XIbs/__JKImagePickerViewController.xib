@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="globalScrollView" destination="JOE-xN-dTg" id="jF3-He-4Ky"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8rR-7T-whb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZI-ut-8es">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yax-5E-WAg">
+                            <rect key="frame" x="321" y="0.0" width="46" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="2dW-cF-a7s"/>
+                                <constraint firstAttribute="height" constant="44" id="yjO-cM-J27"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" red="0.0" green="0.47058823529411764" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWX-le-vju">
+                            <rect key="frame" x="8" y="0.0" width="51" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="HEv-Ms-cai"/>
+                            </constraints>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-wK-cJu">
+                            <rect key="frame" x="138.5" y="0.0" width="99" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="EeX-sF-ftU"/>
+                                <constraint firstAttribute="width" constant="99" id="giC-ld-QED"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <state key="normal" title="All Photos">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="SvI-3A-SPU">
+                            <rect key="frame" x="241.5" y="17" width="10" height="10"/>
+                            <color key="tintColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="bcN-Zx-ssJ"/>
+                                <constraint firstAttribute="width" constant="10" id="nBl-u2-Fp0"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53R-X6-l4O">
+                            <rect key="frame" x="0.0" y="44" width="375" height="0.0"/>
+                            <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.33000000000000002" id="ql8-Kt-YWH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="53R-X6-l4O" secondAttribute="bottom" id="09e-WH-pMh"/>
+                        <constraint firstAttribute="height" constant="44" id="2a8-yq-hJX"/>
+                        <constraint firstItem="6mT-wK-cJu" firstAttribute="top" secondItem="5ZI-ut-8es" secondAttribute="top" id="9Xw-7a-BZR"/>
+                        <constraint firstItem="SvI-3A-SPU" firstAttribute="leading" secondItem="6mT-wK-cJu" secondAttribute="trailing" constant="4" id="COJ-d8-NMu"/>
+                        <constraint firstItem="yax-5E-WAg" firstAttribute="top" secondItem="5ZI-ut-8es" secondAttribute="top" id="HaI-Pc-1Ne"/>
+                        <constraint firstItem="nWX-le-vju" firstAttribute="top" secondItem="5ZI-ut-8es" secondAttribute="top" id="LbD-gl-gGJ"/>
+                        <constraint firstItem="53R-X6-l4O" firstAttribute="leading" secondItem="5ZI-ut-8es" secondAttribute="leading" id="TTN-Ds-6rs"/>
+                        <constraint firstItem="SvI-3A-SPU" firstAttribute="centerY" secondItem="6mT-wK-cJu" secondAttribute="centerY" id="Vdh-zX-FJu"/>
+                        <constraint firstItem="6mT-wK-cJu" firstAttribute="centerX" secondItem="5ZI-ut-8es" secondAttribute="centerX" id="YWm-VW-jkf"/>
+                        <constraint firstAttribute="trailing" secondItem="yax-5E-WAg" secondAttribute="trailing" constant="8" id="cK2-0Y-LcF"/>
+                        <constraint firstAttribute="bottom" secondItem="nWX-le-vju" secondAttribute="bottom" id="e99-MK-q8P"/>
+                        <constraint firstAttribute="bottom" secondItem="yax-5E-WAg" secondAttribute="bottom" id="kFb-MK-XwN"/>
+                        <constraint firstItem="nWX-le-vju" firstAttribute="leading" secondItem="5ZI-ut-8es" secondAttribute="leading" constant="8" id="rEc-z8-mzs"/>
+                        <constraint firstAttribute="trailing" secondItem="53R-X6-l4O" secondAttribute="trailing" id="s9G-G5-4Av"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-xN-dTg">
+                    <rect key="frame" x="0.0" y="44" width="375" height="579"/>
+                </scrollView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-1K-JqU">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf5-so-pVI">
+                            <rect key="frame" x="0.0" y="0.0" width="202" height="44"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <state key="normal" title="Library">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZP-MX-75j">
+                            <rect key="frame" x="202" y="0.0" width="173" height="44"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <state key="normal" title="Photo">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bDM-JA-tYB"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JOE-xN-dTg" firstAttribute="top" secondItem="5ZI-ut-8es" secondAttribute="bottom" id="AHD-Ij-WQm"/>
+                <constraint firstItem="6u2-1K-JqU" firstAttribute="top" secondItem="JOE-xN-dTg" secondAttribute="bottom" id="G4m-uE-uuD"/>
+                <constraint firstAttribute="trailing" secondItem="6u2-1K-JqU" secondAttribute="trailing" id="NNx-wz-zzW"/>
+                <constraint firstAttribute="trailing" secondItem="5ZI-ut-8es" secondAttribute="trailing" id="QGM-Oo-Sah"/>
+                <constraint firstItem="5ZI-ut-8es" firstAttribute="leading" secondItem="8rR-7T-whb" secondAttribute="leading" id="SQY-GX-Zm4"/>
+                <constraint firstAttribute="trailing" secondItem="JOE-xN-dTg" secondAttribute="trailing" id="ey3-3L-EgZ"/>
+                <constraint firstItem="JOE-xN-dTg" firstAttribute="leading" secondItem="8rR-7T-whb" secondAttribute="leading" id="fcQ-dk-QTA"/>
+                <constraint firstItem="6u2-1K-JqU" firstAttribute="leading" secondItem="8rR-7T-whb" secondAttribute="leading" id="fqJ-26-19J"/>
+                <constraint firstItem="5ZI-ut-8es" firstAttribute="top" secondItem="8rR-7T-whb" secondAttribute="top" id="n4F-Eg-suO"/>
+                <constraint firstItem="JOE-xN-dTg" firstAttribute="centerX" secondItem="8rR-7T-whb" secondAttribute="centerX" id="rrE-ni-pyX"/>
+                <constraint firstItem="Qwk-Yw-2n7" firstAttribute="bottom" secondItem="6u2-1K-JqU" secondAttribute="bottom" id="uSo-A7-are"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Qwk-Yw-2n7"/>
+            <point key="canvasLocation" x="48" y="-874"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowDown" width="80" height="80"/>
+    </resources>
+</document>

@@ -1,40 +1,29 @@
-#
-# Be sure to run `pod lib lint JKImagePicker.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'JKImagePicker'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of JKImagePicker.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'An image cropper and camera feature like Instagram.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+JKImagePicker is an image cropper and camera feature like Instagram. You can take square-sized photo from camera and also it comes with filters and some edits mode (Brightness, Constrast, Saturation....).
                        DESC
 
-  s.homepage         = 'https://github.com/kukuji/JKImagePicker'
+  s.homepage         = 'https://github.com/jamesTheKid/JKImagePicker'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kukuji' => 'kumako.jimmy@gmail.com' }
-  s.source           = { :git => 'https://github.com/kukuji/JKImagePicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'jamesTheKid' => 'kumako.jimmy@gmail.com' }
+  s.source           = { :git => 'https://github.com/jamesTheKid/JKImagePicker.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/jamesthakid'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'JKImagePicker/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'JKImagePicker' => ['JKImagePicker/Assets/*.png']
-  # }
+  s.source_files = ['JKImagePicker/Classes/**/*.swift']
+#s.resources    = ['JKImagePicker/Ressources/*.xib']
+
+  s.resources    = ['JKImagePicker/Assets/Assets.xcassets','JKImagePicker/Assets/**/*.xib']
+
+#s.resource_bundles = {
+#    'JKImagePicker' => ['JKImagePicker/Assets/**/*.xib']
+#  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  JKImagePicker
 //
-//  Created by kukuji on 02/15/2018.
-//  Copyright (c) 2018 kukuji. All rights reserved.
+//  Created by jamesTheKid on 02/15/2018.
+//  Copyright (c) 2018 jamesTheKid. All rights reserved.
 //
 
 import UIKit

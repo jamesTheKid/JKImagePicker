@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'JKImagePicker_Example' do
   pod 'JKImagePicker', :path => '../'
+  pod 'SMInstagramPhotoPicker'
 
   target 'JKImagePicker_Tests' do
     inherit! :search_paths
