@@ -97,8 +97,7 @@ class JKCameraView: UIView {
     
     layer.addSublayer(preview!)
     self.layoutIfNeeded()
-    print("createPreview")
-    print("preview frame : \(preview.frame.size.width) \(preview.frame.size.height)")
+    
   }
   
   public func rotatePreview() {

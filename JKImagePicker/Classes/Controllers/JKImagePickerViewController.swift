@@ -205,8 +205,6 @@ public class JKImagePickerViewController: UIViewController {
       
       spinner.center =  CGPoint(x: 46/2,y: 44/2)
       
-      //print("viewDidLayoutSubviews")
-      
     }
   
     private func navigationBarConfigurations() {

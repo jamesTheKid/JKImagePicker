@@ -46,11 +46,11 @@ class JKScrollView: UIScrollView{
       
         if (zoomScale <= 1.0) {
           setZoomScale(zoomScaleWithNoWhiteSpaces(), animated: true)
-          print("zoomScaleWithNoWhiteSpaces")
+          
         }
         else{
           setZoomScale(minimumZoomScale, animated: true)
-          print("minimumZoomScale")
+          
         }
         updateLayout()
     }

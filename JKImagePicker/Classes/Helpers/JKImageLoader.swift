@@ -27,7 +27,7 @@ class JKImageLoader: NSObject {
             self.assets.append(object)
             if self.assets.count == fetchResult.count{
               self.success!(self.assets)
-              print("loadAllPhotos success")
+              
             }
             else{
               

@@ -358,12 +358,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JKImagePicker_Example/Pods-JKImagePicker_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JKImagePicker/JKImagePicker.framework",
-				"${BUILT_PRODUCTS_DIR}/SMInstagramPhotoPicker/SMInstagramPhotoPicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKImagePicker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMInstagramPhotoPicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

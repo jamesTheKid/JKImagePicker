@@ -227,14 +227,14 @@ class JKLibraryView: UIView, UICollectionViewDataSource {
     
     if assets.count != 0{
       photos = assets
-      print("configureImageCropper")
+      
       //collectionView.delegate = self
       //collectionView.dataSource = self
       collectionView.reloadData()
       selectDefaultImage()
     }
     else{
-      print("first call")
+      
     }
   }
   

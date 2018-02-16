@@ -55,13 +55,7 @@ extension JKLibraryView: PHPhotoLibraryChangeObserver {
   func photoLibraryDidChange(_ changeInstance: PHChange) {
     print("album changed")
     DispatchQueue.main.async {
-      //self.loadPhotos()
-      /*
-      if let changes = changeInstance.changeDetails(for: fetchResult) {
-        // Keep the new fetch result for future use.
-        //fetchResult = changes.fetchResultAfterChanges
-      }
-      */
+      
       
     }
   }
