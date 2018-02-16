@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/JKImagePicker.svg?style=flat)](http://cocoapods.org/pods/JKImagePicker)
 [![Platform](https://img.shields.io/cocoapods/p/JKImagePicker.svg?style=flat)](http://cocoapods.org/pods/JKImagePicker)
 
-![](https://image.ibb.co/kqxc0n/Screen_Shot_2018_02_16_at_20_18_38.png)
-![](https://image.ibb.co/jeHALn/Screen_Shot_2018_02_16_at_18_10_30.png)
+![](https://image.ibb.co/jmrqmS/Screen_Shot_2018_02_16_at_20_18_38.png)
+![](https://image.ibb.co/hvVSY7/Screen_Shot_2018_02_16_at_20_47_57.png)
 
 ## Example
 
@@ -14,7 +14,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 Swift 3.2
-iOS 9
+  iOS 9
+  
 
 ## Installation
 
