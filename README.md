@@ -11,7 +11,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 Swift 3.2
-  iOS 9
+iOS 9
 
 ## Installation
 
@@ -46,7 +46,7 @@ self.present(self.imagePicker!, animated: true, completion: nil)
 #### Delegate methods
 
 ```Swift
-// Return the image which is selected from library  or  taken with the camera.
+// Return the image which is selected from library or taken with the camera.
 func didFinishPickingPhoto(image: UIImage) {
 
   print("image picked")
@@ -59,6 +59,12 @@ func didCancelPickingPhoto() {
   print("Cancel button clicked")
 }
 ```
+
+## TO-DO
+
+* Add filters
+* Add Edits (Brightness, Contrast, Saturation...)
+* Make all the components configurable
 
 ## Author
 

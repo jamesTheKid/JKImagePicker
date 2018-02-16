@@ -367,6 +367,7 @@ extension JKImagePickerViewController:  JKCameraViewDelegate, JKPhotoPickerAlbum
     nextClicked = false
     didSetupConstraint = false
     self.delegate?.didFinishPickingPhoto(image: image)
+    self.dismiss(animated: true, completion: nil)
   }
   
   

@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "iconCapture2.pdf",
+      "filename" : "capture.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "capture@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "capture@3x.png",
       "scale" : "3x"
     }
   ],

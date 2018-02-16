@@ -18,6 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JKImagePickerViewController" customModule="JKImagePicker">
             <connections>
                 <outlet property="arrowImageView" destination="Jtm-g7-soe" id="Kiu-YP-jYd"/>
+                <outlet property="bottomToolsView" destination="T9b-6F-SlR" id="Nh9-sO-NCI"/>
                 <outlet property="cameraButton" destination="0NK-W8-qsL" id="bCY-50-sBr"/>
                 <outlet property="cancelButton" destination="FLo-VQ-eyX" id="rHz-ru-hnC"/>
                 <outlet property="globalScrollView" destination="8Lg-O4-BKd" id="FBl-rR-4HY"/>

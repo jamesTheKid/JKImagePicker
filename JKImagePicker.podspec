@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'JKImagePicker'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'An image cropper and camera feature like Instagram.'
 
   s.description      = <<-DESC
@@ -17,13 +17,12 @@ JKImagePicker is an image cropper and camera feature like Instagram. You can tak
   s.ios.deployment_target = '9.0'
 
   s.source_files = ['JKImagePicker/Classes/**/*.swift']
-#s.resources    = ['JKImagePicker/Ressources/*.xib']
-
+  
   s.resources    = ['JKImagePicker/Assets/Assets.xcassets','JKImagePicker/Assets/**/*.xib']
 
-#s.resource_bundles = {
-#    'JKImagePicker' => ['JKImagePicker/Assets/**/*.xib']
-#  }
+  #s.resource_bundles = {
+  #    'JKImagePicker' => ['JKImagePicker/Assets/**/*.xib']
+  #  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
