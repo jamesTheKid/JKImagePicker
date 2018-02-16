@@ -22,6 +22,11 @@ class ViewController: UIViewController,JKImagePickerViewControllerDelegate {
       // Do any additional setup after loading the view, typically from a nib.
   }
   
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
   @IBAction func showPicker(_ sender: Any) {
     if picker != nil {
       self.present(picker!, animated: true, completion: nil)
@@ -35,8 +40,10 @@ class ViewController: UIViewController,JKImagePickerViewControllerDelegate {
   }
   
   
+  // MARK: JKImagePickerViewControllerDelegate methods
+  
   func didFinishPickingPhoto(image: UIImage) {
-    imageSelected?.image = image
+    self.imageSelected?.image = image
   }
   
   func didCancelPickingPhoto() {
@@ -44,10 +51,6 @@ class ViewController: UIViewController,JKImagePickerViewControllerDelegate {
   }
   
 
-  override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
-  }
 
 }
 

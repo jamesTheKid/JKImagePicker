@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/JKImagePicker.svg?style=flat)](http://cocoapods.org/pods/JKImagePicker)
 [![Platform](https://img.shields.io/cocoapods/p/JKImagePicker.svg?style=flat)](http://cocoapods.org/pods/JKImagePicker)
 
+![](https://image.ibb.co/kqxc0n/Screen_Shot_2018_02_16_at_20_18_38.png)
+![](https://image.ibb.co/jeHALn/Screen_Shot_2018_02_16_at_18_10_30.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -49,14 +52,14 @@ self.present(self.imagePicker!, animated: true, completion: nil)
 // Return the image which is selected from library or taken with the camera.
 func didFinishPickingPhoto(image: UIImage) {
 
-  print("image picked")
-  
+print("image picked")
+
 }
 
 // Called after click on cancel button.
 func didCancelPickingPhoto() {
 
-  print("Cancel button clicked")
+print("Cancel button clicked")
 }
 ```
 
@@ -77,3 +80,4 @@ JKImagePicker is available under the MIT license. See the LICENSE file for more 
 ## Special Credits
 
 This project is based on **Fahid Attique** project  **FAImageCropper**  -  https://github.com/fahidattique55/FAImageCropper
+

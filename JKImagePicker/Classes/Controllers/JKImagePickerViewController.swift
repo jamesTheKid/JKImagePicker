@@ -128,24 +128,20 @@ public class JKImagePickerViewController: UIViewController {
     
     private func viewConfigurations() {
       
-      //*
       self.libraryView = JKLibraryView.instance()
       self.cameraView = JKCameraView.instance()
       self.albumView = JKPhotoPickerAlbumView.instance()
-      //*/
       
       self.albumView.delegate = self
       self.cameraView.delegate = self
       self.libraryView.delegate = self
       
-      ///*
       globalScrollView.contentSize = CGSize(width: self.view.frame.size.width*2, height: self.globalScrollView.frame.height)
     
       self.libraryView.frame = CGRect(origin:CGPoint.zero, size: self.globalScrollView.frame.size)
       let cameraViewFrameOrigin = CGPoint(x: self.view.frame.size.width,y: 0)
       self.cameraView.frame = CGRect(origin:cameraViewFrameOrigin , size: self.globalScrollView.frame.size)
  
-      
       self.libraryView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
       self.cameraView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
       self.globalScrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -158,18 +154,14 @@ public class JKImagePickerViewController: UIViewController {
       self.libraryView.layoutIfNeeded()
       self.cameraView.layoutIfNeeded()
       
-      
       self.globalScrollView.isScrollEnabled = false
-       //*/
-      //navigationBarConfigurations()
       
       albumName = "All Photos"
       selectedAlbumButton.setTitle(albumName, for: .normal)
       let contraint = selectedAlbumButton.titleLabel?.intrinsicContentSize
       selectedAlbumButton.updateConstraint(attribute: .width, value: (contraint?.width)!)
       
-      
-      let downIcon = UIImage(named: "arrowDown.png", in: Bundle(for: self.classForCoder), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
+      let downIcon = UIImage(named: "arrowDown.png", in: Bundle(for: self.classForCoder), compatibleWith: nil)
       
       arrowImageView.image = downIcon
       albumView.frame = CGRect(x: 0, y: view.frame.height, width: view.frame.width, height: view.frame.height - 44.0)
@@ -181,8 +173,7 @@ public class JKImagePickerViewController: UIViewController {
     override public func viewDidLayoutSubviews() {
       
       globalScrollView.contentSize = CGSize(width: self.view.frame.size.width*2, height: self.globalScrollView.frame.height)
-      //if self.libraryView != nil && self.cameraView != nil && self.cameraView != nil {
-        
+      
         if didSetupConstraint == false {
           globalScrollView.contentSize = CGSize(width: self.view.frame.size.width*2, height: self.globalScrollView.frame.height)
           self.libraryView.frame = CGRect(origin:CGPoint.zero, size: self.globalScrollView.frame.size)
@@ -192,30 +183,16 @@ public class JKImagePickerViewController: UIViewController {
           
           didSetupConstraint = true
         }
-        
-        
+      
         if didStartSession == false {
           
           self.cameraView.startSession()
           didStartSession = true
         }
-      //}
-      
-      
       
       spinner.center =  CGPoint(x: 46/2,y: 44/2)
       
     }
-  
-    private func navigationBarConfigurations() {
-    
-        navigationController?.navigationBar.backgroundColor = .black
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.setBackgroundImage(UIImage(color: .black), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage(color: .clear)
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-    }
-
   
     override  public var prefersStatusBarHidden : Bool {
       
