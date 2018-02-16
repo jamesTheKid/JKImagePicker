@@ -67,9 +67,11 @@ print("Cancel button clicked")
 
 ## TO-DO
 
+* Swift 4 support
 * Add filters
 * Add Edits (Brightness, Contrast, Saturation...)
 * Make all the components configurable
+
 
 ## Author
 
