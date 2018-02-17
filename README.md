@@ -75,7 +75,7 @@ print("Cancel button clicked")
 
 ## Author
 
-**Jimmy Kumako**  ,  https://github.com/jamesTheKid
+**Jimmy Kumako**  ,  https://twitter.com/jamesthakid
 
 ## License
 
